@@ -6,19 +6,21 @@ from django.contrib.gis.db import models
 
 # Marcador: Propiedad cpval
 
+
+
 class Propiedad(models.Model):
-    id = models.PositiveSmallIntegerField(primary_key=True, verbose_name='id', default= 100)
+    id = models.CharField(primary_key=True, verbose_name='id', max_length= 20000 ,default= '1')
     dormitorio = models.IntegerField(default=1, verbose_name= 'dormitorio')
-    banos = models.IntegerField(default= 1 , verbose_name= 'baños')
+    bano = models.IntegerField(default= 1 , verbose_name= 'baños')
     estacionamiento = models.IntegerField(default=1 ,verbose_name='Estacionamiento')
     comuna = models.IntegerField(default=1 ,verbose_name='Comuna')
     area_total = models.IntegerField(default=10, verbose_name= 'Area total')
     area_construida = models.IntegerField(default=10, verbose_name= 'Area construida')
-    tipo_propiedad = models.IntegerField(default= 1 , verbose_name= 'Tipo propiedad')
-    condicion = models.IntegerField(default= 1 , verbose_name= 'Condicion')
-    precio_tasado = models.IntegerField(default=3000 ,verbose_name='Precio tasado')
-    latitude = models.DecimalField(verbose_name="Latitude", max_digits=10, decimal_places=8)
     longitude = models.DecimalField(verbose_name="Longitude", max_digits=10, decimal_places=8)
+    latitude = models.DecimalField(verbose_name="Latitude", max_digits=10, decimal_places=8)
+    condicion = models.IntegerField(default= 1 , verbose_name= 'Condicion')
+    resultado = models.IntegerField(default=3000 ,verbose_name='Precio tasado')
+    
 
     class Meta:
         verbose_name = "Propiedad"

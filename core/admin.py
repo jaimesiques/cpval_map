@@ -11,7 +11,7 @@ from django.contrib.gis.admin import OSMGeoAdmin # Importa OSMGEOadmin
 class PropiedadResourse(resources.ModelResource):
     class Meta: 
         model = Propiedad
-        fields = ('id','dormitorio','banos','comuna','area_total','area_construida','latitude','longitude','condicion','tipo_propiedad','precio_tasado')
+        fields = ('id','dormitorio','bano','estacionamiento','comuna','area_total','area_construida','longitude','latitude','condicion','resultado')
 
 
 class AreaResource(resources.ModelResource):

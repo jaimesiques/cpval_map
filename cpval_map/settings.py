@@ -114,7 +114,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         # NOMBRE DE SU BASE DE DATOS
-        'NAME': 'cpval_map',
+        'NAME': 'test_cpval',
         # USUARIO DE SU BASE DE DATOS
         'USER': 'postgres',
         # CONTRASEÑA DE SU USUARIO

@@ -19,11 +19,11 @@ const areas = JSON.parse(document.getElementById('areas-data').textContent);
 
 // Color de zonas
 var myStyle = {
-    "color": "#565452",
+    /* "color": "#565452",
     "stroke": "true",
     "fill": "true",
     "fillColor": "green",
-    "fillOpacity": 0.1,
+    "fillOpacity": 0.1, */
     "weight": 2,
     "opacity": 0.5
 };

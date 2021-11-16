@@ -19,7 +19,7 @@ class Propiedad(models.Model):
     longitude = models.DecimalField(verbose_name="Longitude", max_digits=10, decimal_places=8)
     latitude = models.DecimalField(verbose_name="Latitude", max_digits=10, decimal_places=8)
     condicion = models.IntegerField(default= 1 , verbose_name= 'Condicion')
-    resultado = models.IntegerField(default=3000 ,verbose_name='Precio tasado')
+    resultado = models.CharField(default='3000',max_length= 3000 ,verbose_name='Precio tasado')
     
 
     class Meta:

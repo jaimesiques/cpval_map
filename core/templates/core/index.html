@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+<!--Title -->
+{% block title %}
+    Mapa | cpval
+{% endblock %}
+
+<!-- Estilos css -->
+{% block estilos %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<link rel="stylesheet" href="{% static 'core/css/mapa.css' %}">
+{% endblock %}
+
+
+<!-- Mapa -->
+{% block mapa %}
+{{ areas|json_script:"areas-data" }}
+<div id="map" style="height:80%"></div>
+
+{% endblock %}
+
+<!-- Scripts -->
+
+{% block scripts %}
+
+
+{% endblock %}
+

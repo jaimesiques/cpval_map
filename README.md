@@ -1,7 +1,8 @@
 # cpval
 - Proyecto realizado para la empresa CPVAL.
 
-
+# Desarrollador
+- Gonzalo Rojas
 # Requerimientos 
 - tener la version de python inferior a 3.10
 - tener postgresql 13

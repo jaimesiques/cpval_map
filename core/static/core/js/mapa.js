@@ -180,7 +180,7 @@ function marcarMapa(p) {
 
 
         let iconM = L.icon({
-            iconUrl: 'https://cdn-icons.flaticon.com/png/128/2776/premium/2776000.png?token=exp=1637102700~hmac=2a2b94e43f691375025431b29597be00',
+            iconUrl: 'https://cdn.iconscout.com/icon/free/png-64/map-pin-1452950-1227762.png',
             iconSize: [20, 20],
             iconAnchor: [15, -10] // la posicion donde se mostrara la ventana emergente
         })

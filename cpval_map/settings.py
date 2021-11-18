@@ -113,13 +113,13 @@ WSGI_APPLICATION = 'cpval_map.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        # NOMBRE DE SU BASE DE DATOS
-        'NAME': 'test',
+         # NOMBRE DE SU BASE DE DATOS
+        'NAME': 'd268bdr60emp86',
         # USUARIO DE SU BASE DE DATOS
-        'USER': 'postgres',
+        'USER': 'ftnajltsitsbmv',
         # CONTRASEÑA DE SU USUARIO
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
+        'PASSWORD': 'a06feb118a265e85d4bfe09f047cc299a1cfcdb3f8bfedc0bac73e5dde8e9cf2',
+        'HOST': 'ec2-52-204-72-14.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }

@@ -119,7 +119,14 @@ function marcarMapa(p) {
         Number(precioT);
         let precioCLP = 0;
 
-        precioCLP = 30565.0 * precioT;
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 0
+        })
+
+        precioCLP = 30565 * Math.round(precioT);
+        formatter.format(precioCLP);
 
 
         // Condicion para saber el tipo de propiedad 
@@ -244,16 +251,7 @@ function marcarMapa(p) {
                 </div>            
             </div>
 
-            <div class = "row row-vent">
-                <div class = "col" >
-                    <div class = "col" >
-                        <div class="field-item" title="Precio CLP">
-                            <i class="fa fa-usd" aria-hidden="true"><b class = "b">${precioCLP}</b></i>
-                        </div>
-                    </div>
-                </div>
             
-            </div>
            
 
             

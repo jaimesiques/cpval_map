@@ -246,7 +246,7 @@ function marcarMapa(p) {
 
                 <div class = "col" >
                     <div class="field-item" title="Tasacion UF">
-                         <i class="fa fa-bar-chart" aria-hidden="true"><b class = "b">${precioT}</b></i>
+                         <i class="fa fa-bar-chart" aria-hidden="true"><b class = "b">${precioT} UF</b></i>
                      </div>
                 </div>            
             </div>
